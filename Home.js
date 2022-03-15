@@ -1,4 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
+
+import heroVideo from '../videos/cincinnati.mp4'
+
 
 const Home = () => {
   return (
@@ -8,19 +11,11 @@ const Home = () => {
 
 
     <div  className='center'> 
-      <header className="hero-image" role="banner">
-        <video autoplay id="heroVideo" loop muted>
-          <source src="./src/video/Cincinnati.mp4" />
-        </video>
-        <img className='poster img-fluid mx-auto d-block d-sm-none' src="" alt="" />
-        <div className="container d-flex flew-row">
-          <div className="row">
-            <div className="col-lg-12 d-flex flex-column justify-content-center text-white py-md-5 text-container">
-              <h2 className="display-4 mb-0">Placeholdertext</h2>
-            </div>
-          </div>
-        </div>
-      </header>
+    <header>
+      <video id="hero-video" autoplay loop>
+        <source src={heroVideo} type="video/mp4" />
+      </video>
+    </header>
       <img id='hero-image' src='https://via.placeholder.com/1500x400' />
       </div>
 
@@ -28,11 +23,11 @@ const Home = () => {
  
       <div class="container">
     <div class="image">
-      <img class="small-image" src="https://via.placeholder.com/400"/>
+      <img class="small-image" src="https://www.jaredweberphotography.com/images/xl/cincinnati-ohio-skyline-at-night.jpg"/>
     </div>
     <div class="a-paragraph">
     <blockquote>
-      <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam provident praesentium, illum saepe ea odio at adipisci similique ipsum, omnis, ipsam iste odit repellat nostrum.</h3>
+      <h3 >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam provident praesentium, illum saepe ea odio at adipisci similique ipsum, omnis, ipsam iste odit repellat nostrum.</h3>
       </blockquote>
     </div>
   </div>
@@ -41,10 +36,10 @@ const Home = () => {
   </div>
 
          <div id='header-before-attractions' className='center'> 
-            <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <h3 className='black-text'> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
          </div>
          <div>  
-            <h1 id='attractions-title' className='center' >Attractions</h1>
+            <h1 id='attractions-title' className='center black-text' >Attractions</h1>
          </div>
          <div className='card-group'>
          <div className="card">
