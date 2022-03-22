@@ -21,6 +21,16 @@ footer {
   width: 100%;
 }
 
+#heading{
+  background-image: url(./images/header-image.jpg);
+  max-width: 100%;
+  background-size: 100%  cover;
+  background-repeat: no-repeat;
+  height: 160px;
+  background-position: center;
+  background-color: rgb(255, 255, 255);
+}
+
 .contact-image{
   min-width: 1300px;
   max-height: 350px;
@@ -38,6 +48,11 @@ footer {
 
 .margin-icon{
   margin-top: 50px;
+  text-align: center;
+}
+
+.padding-con-icon{
+  padding: 2px;
 }
 
 .contact-center{
@@ -58,11 +73,7 @@ footer {
  float: left;
 }
 
-.container {
- display: flex;
- align-items: center;
- justify-content: center;
-}
+
 
 .container-1 {
  display: flex;
@@ -128,15 +139,7 @@ footer {
   grid-row: 1 / -1;
 }
 
-.hero-image-box::after {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
 
 .hero-text-box {
   grid-row: 1 / -1;
@@ -153,4 +156,21 @@ footer {
   font-weight: bold;
   text-transform: uppercase;
   color: white;
+}
+
+.card-title {
+   text-align: center; 
+}
+
+.card-img-top{
+  max-height: 400px;
+  max-width: 400px;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.icons-footer {
+ 
+margin: 5px;
+
 }
